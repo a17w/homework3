@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CNIT 133 Homework 3 - Part 6</title>
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="javascript/main.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+  <nav>
+    <ul id="main-nav">
+      <li><a href="#">HW1</a></li>
+      <li><a href="#">HW2</a></li>
+      <li class="current"><a href="#">HW3</a></li>
+      <li><a href="#">HW4</a></li>
+      <li><a href="#">HW5</a></li>
+      <li><a href="#">HW6</a></li>
+      <li><a href="#">HW7</a></li>
+      <li><a href="#">HW8</a></li>
+    </ul>
+  </nav>
+
+  <nav id="sub-nav">
+    <ul id="sub-nav">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="part1.html">Part 1</a></li>
+      <li><a href="part2.html">Part 2</a></li>
+      <li><a href="part3.html">Part 3</a></li>
+      <li><a href="part4.html">Part 4</a></li>
+      <li><a href="part5.html">Part 5</a></li>
+      <li class="current"><a href="part6.html">Part 6</a></li>
+    </ul>
+  </nav>
+
+  <section class="main">
+    <h1>Part 6 - Multiplication</h1>
+
+    <p>The following webpage contains the heading, Student Grades, and inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers).</p>
+
+    <script>
+      // table1
+      document.write("<table class='table1'>")
+      document.write("<tr><th>Number</th> <th>Square</th> <th>Cubed</th></tr>");
+      document.write("<tr><td>" + 1 + "</td> <td>" + Math.pow(1, 2) + "</td> <td>" + Math.pow(1, 3) + "</td></tr>");
+      document.write("<tr><td>" + 2 + "</td> <td>" + Math.pow(2, 2) + "</td> <td>" + Math.pow(2, 3) + "</td></tr>");
+      document.write("<tr><td>" + 3 + "</td> <td>" + Math.pow(3, 2) + "</td> <td>" + Math.pow(3, 3) + "</td></tr>");
+      document.write("<tr><td>" + 4 + "</td> <td>" + Math.pow(4, 2) + "</td> <td>" + Math.pow(4, 3) + "</td></tr>");
+      document.write("<tr><td>" + 5 + "</td> <td>" + Math.pow(5, 2) + "</td> <td>" + Math.pow(5, 3) + "</td></tr>");
+      document.write("<tr><td>" + 6 + "</td> <td>" + Math.pow(6, 2) + "</td> <td>" + Math.pow(6, 3) + "</td></tr>");
+      document.write("</table><br>");
+
+      // table 2
+      function process(){
+        var htmlOutput = " ";
+        htmlOutput += "<br><table>";
+        htmlOutput += "<tr><th>Number</th> <th>Square</th> <th>Cubed</th></tr>";
+        htmlOutput += "<tr><td>" + 7 + "</td> <td>" + Math.pow(7, 2) + "</td> <td>" + Math.pow(7, 3) + "</td></tr>";
+        htmlOutput += "<tr><td>" + 8 + "</td> <td>" + Math.pow(8, 2) + "</td> <td>" + Math.pow(8, 3) + "</td></tr>";
+        htmlOutput += "<tr><td>" + 9 + "</td> <td>" + Math.pow(9, 2) + "</td> <td>" + Math.pow(9, 3) + "</td></tr>";
+        htmlOutput += "<tr><td>" + 10 + "</td> <td>" + Math.pow(10, 2) + "</td> <td>" + Math.pow(10, 3) + "</td></tr>";
+        htmlOutput += "</table><br>";
+        document.getElementById("table2").innerHTML = htmlOutput;
+      }
+    </script>
+
+    <input type="button" value="SHOW TABLE" onclick="process();"> <!-- click on button to call process() which will load table 2 -->
+    <div id="table2"></div>
+  </section>
+</body>
+
+<footer>
+<div id="footer-container">
+  <ul id="footer-content">
+    <li><a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~awong10/cnit133/index.html"><i class="fa fa-html5" aria-hidden="true"></i></a></li>
+    <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https://hills.ccsf.edu/~awong10/cnit133/index.html"><i class="fa fa-css3" aria-hidden="true"></i></a></li>
+    <li>
+      <script type="text/javascript">
+        var dateModified = document.lastModified;
+        mydate = dateModified.slice(0, 16);
+        document.write("Last updated: " + mydate);
+      </script>
+    </li>
+  </ul>
+</div>
+</footer>
+</div>
+
+</html>

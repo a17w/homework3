@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CNIT 133 Homework 3 - Part 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> // need to debug this
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="javascript/main.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+  <nav>
+    <ul id="main-nav">
+      <li><a href="#">HW1</a></li>
+      <li><a href="#">HW2</a></li>
+      <li class="current"><a href="#">HW3</a></li>
+      <li><a href="#">HW4</a></li>
+      <li><a href="#">HW5</a></li>
+      <li><a href="#">HW6</a></li>
+      <li><a href="#">HW7</a></li>
+      <li><a href="#">HW8</a></li>
+    </ul>
+  </nav>
+
+  <nav id="sub-nav">
+    <ul id="sub-nav">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="part1.html">Part 1</a></li>
+      <li class="current"><a href="part2.html">Part 2</a></li>
+      <li><a href="part3.html">Part 3</a></li>
+      <li><a href="part4.html">Part 4</a></li>
+      <li><a href="part5.html">Part 5</a></li>
+      <li><a href="part6.html">Part 6</a></li>
+    </ul>
+  </nav>
+
+  <section class="main">
+    <h1>Part 2 - Salesperson Commission</h1>
+
+    <form id="commissionForm" name="commissionForm">
+      <label>Salesperson Name:</label>
+      <input type="text" name="sp_name" size="30" tite="this is a test" autofocus><br>
+      <h3>Input the number of items sold for each item number:</h3><br>
+      <!-- <p id="input_validation"></p><br> -->
+      <label>Item 1:</label>
+      <input type="text" name="item1_input" size="10" autofocus><br><br>
+      <label>Item 2:</label>
+      <input type="text" name="item2_input" size="10" autofocus><br><br>
+      <label>Item 3:</label>
+      <input type="text" name="item3_input" size="10" autofocus><br><br>
+      <label>Item 4:</label>
+      <input type="text" name="item4_input" size="10" autofocus><br><br>
+
+    <input type="button" id="submit_button" value="SUBMIT" onclick="calculateCommission()">
+    <input type="reset" id="reset_button" value="RESET" onclick="resetForm()">
+
+    <table>
+      <tr>
+      <th>Item #</th>
+      <th>Price</th>
+      <th>Number Sold</th>
+      <th>Total</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>$239.99</td>
+        <td><input type="text" name="numsold_item1" size="10" autofocus></td>
+        <td><input type="text" name="total_item1" size="10" autofocus></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>$129.75</td>
+        <td><input type="text" name="numsold_item2" size="10" autofocus></td>
+        <td><input type="text" name="total_item2" size="10" autofocus></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>$99.95</td>
+        <td><input type="text" name="numsold_item3" size="10" autofocus></td>
+        <td><input type="text" name="total_item3" size="10" autofocus></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>$350.89</td>
+        <td><input type="text" name="numsold_item4" size="10" autofocus></td>
+        <td><input type="text" name="total_item4" size="10" autofocus></td>
+      </tr>
+      <tr>
+        <td colspan="3">Total Amount Sold: </td>
+        <td><input type="text" name="final_total" size="10" autofocus></td>
+      </tr>
+      <tr>
+        <td colspan="3">Total Weekly Earnings: </td>
+        <td><input type="text" name="salary" size="10" autofocus></td>
+      </tr>
+    </table>
+  </form>
+  </section>
+
+</body>
+
+<footer>
+<div id="footer-container">
+  <ul id="footer-content">
+    <li><a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~awong10/cnit133/index.html"><i class="fa fa-html5" aria-hidden="true"></i></a></li>
+    <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https://hills.ccsf.edu/~awong10/cnit133/index.html"><i class="fa fa-css3" aria-hidden="true"></i></a></li>
+    <li>
+      <script type="text/javascript">
+        var dateModified = document.lastModified;
+        mydate = dateModified.slice(0, 16);
+        document.write("Last updated: " + mydate);
+      </script>
+    </li>
+  </ul>
+</div>
+</footer>
+</div>
+
+</html>

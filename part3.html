@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CNIT 133 Homework 3 - Part 3</title>
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="javascript/main.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <nav>
+      <ul id="main-nav">
+        <li><a href="#">HW1</a></li>
+        <li><a href="#">HW2</a></li>
+        <li class="current"><a href="#">HW3</a></li>
+        <li><a href="#">HW4</a></li>
+        <li><a href="#">HW5</a></li>
+        <li><a href="#">HW6</a></li>
+        <li><a href="#">HW7</a></li>
+        <li><a href="#">HW8</a></li>
+      </ul>
+    </nav>
+
+    <nav id="sub-nav">
+      <ul id="sub-nav">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="part1.html">Part 1</a></li>
+        <li><a href="part2.html">Part 2</a></li>
+        <li class="current"><a href="part3.html">Part 3</a></li>
+        <li><a href="part4.html">Part 4</a></li>
+        <li><a href="part5.html">Part 5</a></li>
+        <li><a href="part6.html">Part 6</a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <h1>Part 3 - Customer Credit Limit</h1>
+
+      <form id="creditForm">
+        <label>Account Number: </label>
+        <input type="text" name="account_num" value=""><br><br>
+        <label>Credit Limit: </label>
+        <input type="text" name="credit_limit" value=""><br><br>
+        <label>Beginning Monthly Balance: </label>
+        <input type="text" name="begin_monthly_balance" value=""><br><br>
+        <label>Total Amount Charged: </label>
+        <input type="text" name="total_amount_charged" value=""><br><br>
+        <label>Total Amount Credited: </label>
+        <input type="text" name="total_amount_credited" value=""><br><br>
+        <input type="button" value="CALCULATE" onclick="calculateCreditLimit()">
+        <input type="reset" value="RESET" onclick="resetForm()"><br><br>
+        <textarea id="results" rows="15" cols="55"></textarea>
+      </form>
+
+    </section>
+</body>
+
+<footer>
+  <div id="footer-container">
+    <ul id="footer-content">
+      <li><a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~awong10/cnit133/index.html"><i class="fa fa-html5" aria-hidden="true"></i></a></li>
+      <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https://hills.ccsf.edu/~awong10/cnit133/index.html"><i class="fa fa-css3" aria-hidden="true"></i></a></li>
+      <li>
+        <script type="text/javascript">
+          var dateModified = document.lastModified;
+          mydate = dateModified.slice(0, 16);
+          document.write("Last updated: " + mydate);
+        </script>
+      </li>
+    </ul>
+  </div>
+</footer>
+</div>
+
+</html>

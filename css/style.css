@@ -1,0 +1,164 @@
+body {
+  background-image: url("../img/light_grey_@2X.jpg");
+  width: 800px;
+  margin: 0 auto;
+  font-family: Questrial, arial, helvetic, sans-serif;
+  color: #333;
+}
+
+.container {
+  margin: 40px auto;
+}
+
+#main-nav {
+  background-color: #38A2D0;
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  /*border: 2px solid #ccc;*/
+  margin-bottom: 10px;
+}
+
+#main-nav li {
+  padding: 9px;
+  border-radius: 5px;
+  background-color: #d7ecf5;
+}
+
+#main-nav li.current a {
+  color: #333;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  font-weight: bold;
+  color: #38A2D0;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+}
+
+ul li a:hover {
+  color: #333333;
+}
+
+
+/*** second nav bar ***/
+
+#sub-nav {
+  background-color: #eee;
+  text-align: center;
+  padding: 5px;
+}
+
+#sub-nav li a:hover {
+  background: #38A2D0;
+  color: #333;
+  padding: 10px;
+}
+
+#sub-nav li a {
+  font-weight: bold;
+  color: #38A2D0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#sub-nav li.current a {
+  background: #38A2D0;
+  color: #333;
+  padding: 10px;
+}
+
+p#instructions0{
+  color: #38A2D0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p#instructions1{
+  display: none;
+}
+
+#reset_button{
+  background: #38A2D0;
+}
+
+#submit_button{
+  background: #38A2D0;
+}
+table {
+  /*border: 2px solid #cccccc;*/
+  background: #d7ecf5;
+  border-collapse: collapse;
+  width: 800px;
+  margin: 0 auto;
+}
+
+thead, tfoot {
+  text-transform: uppercase;
+  color: #FFF;
+  background: #38A2D0;
+}
+
+tbody th {
+  text-align: left;
+  color: #38A2D0;
+}
+
+td {
+  color: #333;
+}
+
+td, th {
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+td a {
+  text-decoration: none;
+  color: #333333;
+}
+
+td a:hover {
+  color: #38A2D0;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 750px;
+  height: 750px;
+}
+
+.footer-container {
+  margin-top: 0 auto;
+}
+
+#footer-content {
+  margin: 0 auto;
+  background-color: #fafafa;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#footer-content li {
+  padding: 5px;
+}
