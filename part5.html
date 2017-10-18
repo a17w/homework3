@@ -43,12 +43,14 @@
     <h1>Part 5 - Celsius to Fahrenheit</h1>
     <h3>Celsius and Fahrenheit</h3>
     <form id="conversionForm">
+      <p id="error1"></p>
     <label>Fahrenheit: </label>
     <input type="text" name="fInput">
-    <input type="button" value="Convert to Celsius" onclick="toCelsius()"></input><br><br>
+    <input type="button" id="toC" value="Convert to Celsius" onclick="toCelsius()"></input><br><br>
+      <p id="error2"></p>
     <label>Celsius: </label>
     <input type="text" name="cInput">
-    <input type="button" value="Convert to Fahrenheit" onclick="toFahrenheit()"></input><br>
+    <input type="button" id="toF" value="Convert to Fahrenheit" onclick="toFahrenheit()"></input><br>
     </form>
     <p id="results1"></p>
     <p id="results2"></p>

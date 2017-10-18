@@ -98,6 +98,16 @@ p#instructions1{
 #submit_button{
   background: #38A2D0;
 }
+
+p#error1, p#error2{
+  color: red;
+}
+
+#toC, #toF{
+  background: #38A2D0;
+  border: 0.5px dotted;
+}
+
 table {
   /*border: 2px solid #cccccc;*/
   background: #d7ecf5;

@@ -175,19 +175,29 @@ function resetForm() {
   document.getElementById("palindromeForm").reset();
 }
 
-// PART 5: CONVERT TO CELCIUS
+// PART 5: CONVERT TO CELSIUS AND FAHRENHEIT
 function toCelsius(){
   var fTemp = parseInt(document.getElementById("conversionForm").elements["fInput"].value);
-  var cTemp = ((5/9) * (fTemp - 32));
-  cTemp = cTemp.toFixed(1);
-  document.getElementById("conversionForm").elements["fInput"].value = cTemp;
-  document.getElementById("results1").innerHTML=(fTemp + " fahrenheit is equal to " + cTemp + " celsius");
+  if (isNaN(fTemp)){
+    // alert("Please input a numeric value");
+      document.getElementById("error1").innerHTML=("Please input a numeric value");
+  } else {
+      var cTemp = ((5 / 9) * (fTemp - 32));
+      cTemp = cTemp.toFixed(1);
+      document.getElementById("conversionForm").elements["fInput"].value = cTemp;
+      document.getElementById("results1").innerHTML = (fTemp + " fahrenheit is equal to " + cTemp + " celsius");
+  }
 }
 
 function toFahrenheit(){
     var cTemp = parseInt(document.getElementById("conversionForm").elements["cInput"].value);
-    var fTemp = ((9/5 * cTemp) + 32);
-    fTemp = fTemp.toFixed(1);
-    document.getElementById("conversionForm").elements["cInput"].value = fTemp;
-    document.getElementById("results2").innerHTML=(cTemp + " celsius is equal to " + fTemp + " fahrenheit");
+    if (isNaN(cTemp)){
+        // alert("Please input a numeric value");
+        document.getElementById("error2").innerHTML=("Please input a numeric value");
+    } else {
+            var fTemp = ((9 / 5 * cTemp) + 32);
+            fTemp = fTemp.toFixed(1);
+            document.getElementById("conversionForm").elements["cInput"].value = fTemp;
+            document.getElementById("results2").innerHTML = (cTemp + " celsius is equal to " + fTemp + " fahrenheit");
+        }
 }
